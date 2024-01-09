@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        #header
+        {
+            width: 100%;
+            height: auto;
+            background-color: blue;
+            padding: 10px;
+        }
+        .nav
+        {
+            width: 70%;
+            height: auto;
+
+        }
+        .nav ul li
+        {
+            display: inline-block;
+            padding: 10px;
+        }
+        .nav a
+        {
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+            font-size: 25px;
+            margin-left: 50px;
+        }
+        .drop
+        {
+           position: relative; 
+        }
+        .down
+        {
+            width: 80px;
+            height: 140 px;
+            padding: 10px;
+            margin-left: 32%;
+            position: absolute;
+            display: none;
+            background-color: aliceblue;
+
+        }
+        .drop:hover .down
+        {
+            display: block;
+        }
+        .drop1
+        {
+          position: relative;
+        }
+        .down1
+        {
+            height: auto;
+            width: 100px;
+            padding: 10px;
+            margin-left: 34%;
+            position: absolute;
+            display: none;
+            background-color: aliceblue;
+           
+        }
+        .drop1:hover .down1
+        {
+            display: block;
+        }
+        .drop2
+        {
+            position: relative;
+        }
+        .down2
+        {
+            height: auto;
+            width: 100px;
+            padding: 10px;
+            margin-left: 34%;
+            position: absolute;
+            display: none;
+            background-color: aliceblue;
+        }
+        .drop2:hover .down2
+        {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div class="nav">
+            <ul>
+            <li><a href="">Home</a></li>
+            <li class="drop"><a href="">Services</a>
+            <ul class="down">
+                <li>React</li>
+                <li>Html</li>
+                <li>Javascript</li>
+                <li>Python</li>
+            </ul>
+            </li>
+
+            <li class="drop1"><a href="">Gallary</a>
+            <ul class="down1">
+                <li>Office</li>
+                <li>Garden</li>
+                <li>Game Zone</li>
+            </ul>
+            </li>
+            <li class="drop2"><a href="">Review</a>
+            <ul class="down2">
+                <li>Bad</li>
+                <li>Good</li>
+                <li>Very Good</li>
+                <li>Excellent</li>
+                <li>Poor</li>
+            </ul>
+            </li>
+            <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
